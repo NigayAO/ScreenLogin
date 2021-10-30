@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0C5E9A272C859800E10384 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C5E99272C859800E10384 /* LoginModel.swift */; };
 		1D7C1B58272C017800002D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C1B57272C017800002D81 /* AppDelegate.swift */; };
 		1D7C1B5A272C017800002D81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C1B59272C017800002D81 /* SceneDelegate.swift */; };
-		1D7C1B5C272C017800002D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C1B5B272C017800002D81 /* ViewController.swift */; };
 		1D7C1B5F272C017800002D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C1B5D272C017800002D81 /* Main.storyboard */; };
 		1D7C1B61272C017800002D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C1B60272C017800002D81 /* Assets.xcassets */; };
 		1D7C1B64272C017800002D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C1B62272C017800002D81 /* LaunchScreen.storyboard */; };
+		1D7C1B6C272C019C00002D81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C1B6B272C019C00002D81 /* LoginViewController.swift */; };
+		1D7C1B6E272C01A700002D81 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C1B6D272C01A700002D81 /* WelcomeViewController.swift */; };
+		1D7D48F1272C485A00ABEFB8 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D48F0272C485A00ABEFB8 /* LoginData.swift */; };
+		1D7D48F3272C49EC00ABEFB8 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D48F2272C49EC00ABEFB8 /* InformationViewController.swift */; };
+		1D7D48F5272C49F600ABEFB8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D48F4272C49F600ABEFB8 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0C5E99272C859800E10384 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		1D7C1B54272C017800002D81 /* ScreenLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7C1B57272C017800002D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7C1B59272C017800002D81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D7C1B5B272C017800002D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D7C1B5E272C017800002D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D7C1B60272C017800002D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7C1B63272C017800002D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7C1B65272C017800002D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7C1B6B272C019C00002D81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1D7C1B6D272C01A700002D81 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1D7D48F0272C485A00ABEFB8 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		1D7D48F2272C49EC00ABEFB8 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		1D7D48F4272C49F600ABEFB8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				1D7C1B57272C017800002D81 /* AppDelegate.swift */,
 				1D7C1B59272C017800002D81 /* SceneDelegate.swift */,
-				1D7C1B5B272C017800002D81 /* ViewController.swift */,
+				1D7D48F0272C485A00ABEFB8 /* LoginData.swift */,
+				1D0C5E99272C859800E10384 /* LoginModel.swift */,
+				1D7C1B6B272C019C00002D81 /* LoginViewController.swift */,
+				1D7C1B6D272C01A700002D81 /* WelcomeViewController.swift */,
+				1D7D48F2272C49EC00ABEFB8 /* InformationViewController.swift */,
+				1D7D48F4272C49F600ABEFB8 /* ImageViewController.swift */,
 				1D7C1B5D272C017800002D81 /* Main.storyboard */,
 				1D7C1B60272C017800002D81 /* Assets.xcassets */,
 				1D7C1B62272C017800002D81 /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7C1B5C272C017800002D81 /* ViewController.swift in Sources */,
+				1D7C1B6C272C019C00002D81 /* LoginViewController.swift in Sources */,
+				1D7D48F1272C485A00ABEFB8 /* LoginData.swift in Sources */,
+				1D7C1B6E272C01A700002D81 /* WelcomeViewController.swift in Sources */,
+				1D7D48F5272C49F600ABEFB8 /* ImageViewController.swift in Sources */,
 				1D7C1B58272C017800002D81 /* AppDelegate.swift in Sources */,
+				1D0C5E9A272C859800E10384 /* LoginModel.swift in Sources */,
 				1D7C1B5A272C017800002D81 /* SceneDelegate.swift in Sources */,
+				1D7D48F3272C49EC00ABEFB8 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

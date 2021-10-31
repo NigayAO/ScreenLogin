@@ -14,7 +14,6 @@ class Users {
     ]
     
     func searchUser(neededLogin: String) -> User {
-        
         var user: User?
         
         for item in storageUsers {

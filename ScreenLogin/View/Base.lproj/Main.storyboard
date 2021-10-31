@@ -158,7 +158,7 @@
                             <constraint firstItem="M9O-Q9-mcJ" firstAttribute="centerX" secondItem="1Wy-03-Jgm" secondAttribute="centerX" id="kiX-Ar-qKT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" image="heart.text.square.fill" catalog="system" selectedImage="heart.text.square.fill" id="7mn-YA-rii"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="person" catalog="system" selectedImage="person" id="7mn-YA-rii"/>
                     <navigationItem key="navigationItem" id="GlT-t9-xu5"/>
                     <connections>
                         <outlet property="textLabel" destination="v6f-DM-ei4" id="frd-zp-H4C"/>
@@ -194,17 +194,17 @@
                                                             <constraint firstAttribute="width" constant="134" id="zBU-du-l1X"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D4V-og-El6">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="D4V-og-El6">
                                                         <rect key="frame" x="154" y="0.0" width="134" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FNt-8b-WRo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="45"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="37.5"/>
                                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Td2-w2-kBT">
-                                                                <rect key="frame" x="0.0" y="55" width="134" height="45"/>
+                                                                <rect key="frame" x="0.0" y="62.5" width="134" height="37.5"/>
                                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -279,14 +279,14 @@
                     <connections>
                         <segue destination="iCu-Dn-8Tk" kind="relationship" relationship="viewControllers" destinationCreationSelector="main" id="knb-d6-q9V"/>
                         <segue destination="NDd-mc-BgT" kind="relationship" relationship="viewControllers" destinationCreationSelector="information" id="h9v-zE-cK9"/>
-                        <segue destination="XhQ-8q-hFc" kind="relationship" relationship="viewControllers" destinationCreationSelector="image" id="bPY-cK-X1G"/>
+                        <segue destination="xpy-29-sEy" kind="relationship" relationship="viewControllers" id="bPY-cK-X1G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4V-HH-dzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905.625" y="97.5"/>
         </scene>
-        <!--Image-->
+        <!--Log out of here?-->
         <scene sceneID="MZf-lv-kt2">
             <objects>
                 <viewController id="XhQ-8q-hFc" customClass="ImageViewController" customModule="ScreenLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -295,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-uv-imG">
-                                <rect key="frame" x="16" y="47" width="288" height="350"/>
+                                <rect key="frame" x="16" y="91" width="288" height="306"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OSu-WD-HJJ"/>
@@ -308,20 +308,47 @@
                             <constraint firstItem="VRN-uv-imG" firstAttribute="leading" secondItem="OSu-WD-HJJ" secondAttribute="leading" constant="16" id="xS0-Eh-Z9W"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Image" image="folder" catalog="system" selectedImage="folder" id="U3I-CP-gmN"/>
+                    <navigationItem key="navigationItem" title="Log out of here?" id="Hm6-xZ-nDs">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="rectangle.portrait.and.arrow.right" catalog="system" id="aI5-zZ-w77">
+                            <connections>
+                                <segue destination="lbO-YT-17T" kind="unwind" unwindAction="unwindSegue:" id="muE-BW-hVu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="VRN-uv-imG" id="a3M-F5-0Zx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGg-jc-0hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lbO-YT-17T" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="884"/>
+            <point key="canvasLocation" x="2773.125" y="883.75"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="fVz-08-MAg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xpy-29-sEy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Image" image="folder" catalog="system" selectedImage="folder" id="U3I-CP-gmN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="joL-v2-C5N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XhQ-8q-hFc" kind="relationship" relationship="rootViewController" id="FHf-Gm-sSj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPY-Wc-slt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775.625" y="883.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="folder" catalog="system" width="128" height="97"/>
-        <image name="heart.text.square.fill" catalog="system" width="128" height="114"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

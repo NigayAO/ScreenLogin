@@ -30,7 +30,7 @@ class InformationViewController: UIViewController {
     func setText() {
         nameLabel.text = "Name & Surname: \(person.name) \(person.surName)"
         ageLabel.text = "Phone: \(person.phone)"
-        cityLabel.text = "City: \(person.email)"
+        cityLabel.text = "Email: \(person.email)"
         informationLabel.text = "Company: \(person.company)"
         avatarImage.image = UIImage(named: person.avatar)
         avatarImage.layer.cornerRadius = 65

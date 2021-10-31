@@ -9,14 +9,14 @@ import Foundation
 
 struct User {
     
-    var login = "User"
-    var password = "123456"
+    var login = ""
+    var password = ""
     
-    var name: String
-    var surName: String
-    var phone: Int
-    var email: String
-    var company: String
-    var avatar = "ava"
-    var image = "Dog"
+    var name = ""
+    var surName = ""
+    var phone = 0
+    var email = ""
+    var company = ""
+    var avatar = ""
+    var image = ""
 }

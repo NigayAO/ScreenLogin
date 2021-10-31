@@ -32,8 +32,9 @@ class LoginViewController: UIViewController {
                 welcomeVC.people = test.name
             } else if let informationVC = viewController as? InformationViewController {
                 informationVC.person = test
-            } else if let imageVC = viewController as? ImageViewController {
-                imageVC.image = test.image
+            } else if let navigationVC = viewController as? UINavigationController {
+                let imageVC = navigationVC.topViewController as? ImageViewController
+                imageVC?.image = test.image
             }
         }
     }

@@ -14,7 +14,7 @@ class Users {
     ]
     
     func searchUser(neededLogin: String) -> User {
-        var user: User?
+        var user = User()
         
         for item in storageUsers {
             if item.login == neededLogin {
@@ -22,6 +22,6 @@ class Users {
                 break
             }
         }
-        return user!
+        return user
     }
 }

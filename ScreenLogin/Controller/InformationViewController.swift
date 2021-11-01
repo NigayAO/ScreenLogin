@@ -9,7 +9,6 @@ import UIKit
 
 class InformationViewController: UIViewController {
     
-    
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
@@ -19,7 +18,7 @@ class InformationViewController: UIViewController {
     let topColor = UIColor(red: 1.00, green: 0.83, blue: 0.19, alpha: 1.00)
     let bottomColor = UIColor(red: 0.99, green: 0.36, blue: 0.40, alpha: 1.00)
     
-    var person = User(name: "", surName: "", phone: 0, email: "", company: "", avatar: "")
+    var person = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +27,11 @@ class InformationViewController: UIViewController {
     }
     
     func setText() {
-        nameLabel.text = "Name & Surname: \(person.name) \(person.surName)"
-        ageLabel.text = "Phone: \(person.phone)"
-        cityLabel.text = "Email: \(person.email)"
-        informationLabel.text = "Company: \(person.company)"
-        avatarImage.image = UIImage(named: person.avatar)
+        nameLabel.text = "Name & Surname: \(person.person.fullName)"
+        ageLabel.text = "Phone: \(person.person.phone)"
+        cityLabel.text = "Email: \(person.person.email)"
+        informationLabel.text = "Company: \(person.person.company)"
+        avatarImage.image = UIImage(named: person.person.avatar)
         avatarImage.layer.cornerRadius = 65
     }
 

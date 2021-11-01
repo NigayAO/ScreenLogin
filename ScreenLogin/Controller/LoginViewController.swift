@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    let user = Users()
+    let user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,33 +20,27 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let login = loginTF.text else { return }
-        let test = user.searchUser(neededLogin: login)
-        
         guard let tabBar = segue.destination as? UITabBarController else { return }
         let viewcontrollers = tabBar.viewControllers!
         
         for viewController in viewcontrollers {
             
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.people = test.name
+                welcomeVC.people = user.person.name
             } else if let informationVC = viewController as? InformationViewController {
-                informationVC.person = test
+                informationVC.person = user
             } else if let navigationVC = viewController as? UINavigationController {
                 let imageVC = navigationVC.topViewController as? ImageViewController
-                imageVC?.image = test.image
+                imageVC?.image = user.person.image
             }
         }
     }
     
     @IBAction func loginPressed() {
-        
-        guard let login = loginTF.text else { return }
-        let test = user.searchUser(neededLogin: login)
-        
-        if loginTF.text != test.login || passwordTF.text != test.password {
+                
+        if loginTF.text != user.login || passwordTF.text != user.password {
             addAlert("Invalid login or password", "Please, enter correct login and password")
-            if loginTF.text != test.login {
+            if loginTF.text != user.login {
                 loginTF.text = ""
             } else {
                 passwordTF.text = ""
